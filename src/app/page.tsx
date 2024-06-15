@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Breadcrumb } from "antd";
 
 export default function Home() {
   return (
@@ -9,6 +10,22 @@ export default function Home() {
           Get started by editing&nbsp;
           <code className={styles.code}>src/app/page.tsx</code>
         </p>
+        <Breadcrumb
+          items={[
+            {
+              title: "Home",
+            },
+            {
+              title: <a href="">Application Center</a>,
+            },
+            {
+              title: <a href="">Application List</a>,
+            },
+            {
+              title: "An Application",
+            },
+          ]}
+        />
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
