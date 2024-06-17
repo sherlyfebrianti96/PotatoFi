@@ -10,6 +10,7 @@ import {
   UserOutlined,
 } from "@ant-design/icons";
 import Image from "next/image";
+import Wallet from "@/components/wallet/wallet";
 
 interface BaseLayoutProps {
   children: ReactNode;
@@ -73,9 +74,7 @@ const BaseLayout = ({ children, ...props }: BaseLayoutProps) => {
             <div className="demo-logo">We are potato</div>
           </Flex>
           <Flex>
-            <div>Menu 1</div>
-            <div>Menu 2</div>
-            <div>Menu 3</div>
+            <Wallet />
           </Flex>
         </Flex>
       </Header>
